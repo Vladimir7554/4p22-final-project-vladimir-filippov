@@ -1,0 +1,11 @@
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  font: var(--base-font-weight) var(--base-font-size)/var(--base-line-height) var(--base-font-family);
+  color: var(--c-dark);
+  background-color: var(--c-gray);
+}

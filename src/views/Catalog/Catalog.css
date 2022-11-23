@@ -1,0 +1,9 @@
+.catalog-body__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 38px 17px;
+}
+
+li {
+    list-style-type: none;
+}
