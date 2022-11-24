@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Input from "../../components/Input/Input";
 import './CatalogFilter.css'
 import svg from './filter.svg'
@@ -8,32 +8,38 @@ const CatalogFilter = (props) => {
         products,
         setFilteredProducts,
         categories,
-        setCategories,
-        filteredProducts,
+        defaultCategory,
     } = props
+
     const [searchQuery, setSearchQuery ] = useState('')
-    const onInputChange = ({ target }) => {
-        const newSearchQuery = target.value
-        const newFilteredProducts = products.filter(( {title} ) => {
-            return title.toLowerCase().includes(newSearchQuery.toLowerCase())
-        })
-        setSearchQuery(newSearchQuery)
-        setFilteredProducts(newFilteredProducts)
-    }
-    const onCategoryButtonClick = (event, categoryId) => {
-const newCategories = categories.map((category) => ({
-    ...category,
-    isActive: category.id === categoryId
-}))
-        const newFilteredProducts = categoryId === 'category-0'
-        ? products
-        : products.filter((product) => {
-            return product.categoryId === categoryId
+    const [activeCategory, setActiveCategory] = useState(defaultCategory)
+
+    const filter = () => {
+        const newFilteredProducts = products.filter(({ name, category }) => {
+            const isCategoryTheSame = category === activeCategory
+            const isDefaultCategory = activeCategory === defaultCategory
+            const nameFormatted = name.toLowerCase()
+            const searchQueryFormatted = searchQuery.toLowerCase()
+            const isNameIncludesSearchQuery = nameFormatted.includes(searchQueryFormatted)
+
+            return (isCategoryTheSame || isDefaultCategory) && isNameIncludesSearchQuery
         })
 
-        setCategories(newCategories)
         setFilteredProducts(newFilteredProducts)
     }
+
+    const onInputChange = ({ target }) => {
+        setSearchQuery(target.value)
+    }
+
+    const onCategoryButtonClick = (categoryName) => {
+        setActiveCategory(categoryName)
+    }
+
+
+    useEffect(() => {
+        filter()
+    }, [searchQuery, activeCategory])
 
     return (
         <div className="catalog-filter">
@@ -45,26 +51,27 @@ const newCategories = categories.map((category) => ({
 </div>
             <Input
                 className="catalog-filter__input"
-                placeholder="Search.."
+                placeholder="Search...."
                 value={searchQuery}
                 onChange={onInputChange}
             />
 
             <div className="catalog-filter__categories">
-                {categories.map(({ id, name, isActive }) => {
-                    let classNameFormatted = 'category-filter__category-button'
+                {categories.map((categoryName) => {
+                    const isActive = categoryName === activeCategory
+                    let classNameFormatted = 'catalog-filter__category-button'
                     if (isActive) {
-                        classNameFormatted += ` is-active`
+                        classNameFormatted += ' is-active'
                     }
+
                     return (
                         <button
-                            key={id}
+                            key={categoryName}
                             className={classNameFormatted}
-                                type="button"
-                                onClick={(event) => onCategoryButtonClick(event, id)}
-
+                            type="button"
+                            onClick={() => onCategoryButtonClick(categoryName)}
                         >
-                            {name}
+                            {categoryName}
                         </button>
                     )
                 })}

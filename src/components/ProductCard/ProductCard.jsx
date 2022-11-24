@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 import svg from './basket.svg'
 
 const ProductCard = (props) => {
-    const { id, title, imgSrc, categoryName, description, price = '0 $', } = props
+    const { id, title, imgSrc, category, description, price = '0 $', } = props
 
     const href = `catalog/${id}`
 
@@ -20,10 +20,10 @@ const ProductCard = (props) => {
                  loading="lazy"
             />
             </Link>
-            <div className="product-card__category-name">{categoryName}</div>
+            <div className="product-card__category-name">{category}</div>
             <div className="product-card__body">
             <Link className="product-card__title" to={href}>{title}</Link>
-            <div className="product-card__description">{description}</div>
+            <div className="product-card__description" title={description}>{description}</div>
                 <div className="product-card__info">
                     <div className="product-card__price">
                         {price}

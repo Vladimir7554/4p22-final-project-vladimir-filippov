@@ -3,69 +3,53 @@ import './Catalog.css'
 import CatalogBody from "../CatalogBody/CatalogBody";
 import CatalogFilter from "../CatalogFilter/CatalogFilter";
 
-const defaultCategories = [
-    {
-        name: 'All',
-        id: 'category-0',
-    },
-    {
-        name: 'Birthday gifts',
-        id: 'category-1',
-    },
-    {
-        name: 'Toys',
-        id: 'category-2',
-    },
-    {
-        name: 'Home plant',
-        id: 'category-3',
-        isActive: true,
-    },
-]
+const defaultCategory = "All"
+export const API_URL = 'https://raw.githubusercontent.com/SoraMaruyama/flowerAPI/master/flowers.json'
 
 const Catalog = () => {
-
     const [products, setProducts] = useState([])
-    const [filteredProducts, setFilteredProducts] =useState([])
-    const [categories, setCategories] = useState(defaultCategories)
+    const [filteredProducts, setFilteredProducts] = useState([])
+    const [categories, setCategories] = useState([defaultCategory])
+
+    const getCategoriesFromProducts = (products) => {
+        const allCategoryNames = products.map(({ category }) => category)
+        const uniqueCategoryNames = new Set(allCategoryNames)
+
+        return Array.from(uniqueCategoryNames)
+    }
 
     const fetchProducts = () => {
-        fetch('https://jsonplaceholder.typicode.com/albums/1/photos')
+        fetch(API_URL)
             .then((response) => response.json())
-            .then((responseData) => {
-                const formattedData = responseData.map((data, index) => {
-                    const categoryIndex = (index % 3 === 0) ? 3 : (index % 2 === 0) ? 2 : 1
-                return {
-                    ...data,
-                    categoryName: categories[categoryIndex].name,
-                    categoryId: categories[categoryIndex].id,
-                }})
-                setProducts(formattedData)
-                setFilteredProducts(formattedData)
-    })
-}
+            .then((response) => {
+                const newProducts = response.flowerlist.map((product) => ({
+                    ...product,
+                    imgSrc: 'https://placekitten.com/250/230'
+                }))
+                const newCategories = getCategoriesFromProducts(newProducts)
+
+                setProducts(newProducts)
+                setFilteredProducts(newProducts)
+                setCategories([...categories, ...newCategories])
+            })
+    }
 
     useEffect(() => {
         fetchProducts()
-    },  [] )
+    }, [])
 
     return (
         <div className="catalog">
-            <div>
-                <CatalogFilter
+            <CatalogFilter
+                className="catalog__filter"
                 products={products}
+                filteredProducts={filteredProducts}
                 setFilteredProducts={setFilteredProducts}
                 categories={categories}
-                setCategories={setCategories}
-                filteredProducts={filteredProducts}
-                />
-            </div>
-            <div>
-                <CatalogBody products={filteredProducts}
-                />
-            </div>
+            />
+            <CatalogBody className="catalog__body" products={filteredProducts}/>
         </div>
-)
- }
+    )
+}
 
- export default Catalog
+export default Catalog

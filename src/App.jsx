@@ -4,6 +4,7 @@ import Layout from "./views/Layout/Layout";
 import HomePage from "./pages/HomePage";
 import BasketPage from "./pages/BasketPage";
 import ProductPage from "./pages/ProductPage";
+import FeedbackPage from "./pages/FeedbackPage";
 
 function FeedBackPage() {
     return null;
@@ -16,7 +17,7 @@ const App = () => {
                 <Route path="/" element={<Layout />} >
                     <Route index element={<HomePage />} />
                     <Route path="/basket" element={<BasketPage />} />
-                    <Route path="/feedback" element={<FeedBackPage />} />
+                    <Route path="/feedback" element={<FeedbackPage />} />
                     <Route path="/catalog/:id" element={<ProductPage />} />
                 </Route>
             </Routes>

@@ -9,12 +9,12 @@ const CatalogBody = (props) => {
     return (
         <div className="catalog-body">
 <ul className="catalog-body__list">
-    {products.map(({id, title, thumbnailUrl, categoryName, instructions, price,}) => (
-    <li className="catalog-body__item" key={id}>
-        <ProductCard id={id}
-                     title={title}
-                     imgSrc={thumbnailUrl}
-                     categoryName={categoryName}
+    {products.map(({productId, name, thumbnailUrl, category, instructions, price,}) => (
+    <li className="catalog-body__item" key={productId}>
+        <ProductCard id={productId}
+                     title={name}
+                     imgSrc="https://placekitten.com/250/230"
+                     category={category}
                      description={instructions}
                      price={`${price} $`}
         />
