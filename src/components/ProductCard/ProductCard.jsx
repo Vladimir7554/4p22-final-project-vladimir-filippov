@@ -10,7 +10,7 @@ const ProductCard = (props) => {
 
     return (
         <article className="product-card">
-            <Link classname="product-card__image-wrapper" to={href}>
+            <Link className="product-card__image-wrapper" to={href}>
             <img
                  src={imgSrc}
                  alt={title}

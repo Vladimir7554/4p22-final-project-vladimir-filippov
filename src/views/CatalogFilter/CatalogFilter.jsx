@@ -2,13 +2,13 @@ import React, {useEffect, useState} from 'react';
 import Input from "../../components/Input/Input";
 import './CatalogFilter.css'
 import svg from './filter.svg'
+import {defaultCategory} from "../Catalog/Catalog";
 
 const CatalogFilter = (props) => {
     const {
         products,
         setFilteredProducts,
         categories,
-        defaultCategory,
     } = props
 
     const [searchQuery, setSearchQuery ] = useState('')

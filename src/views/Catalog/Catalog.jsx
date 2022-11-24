@@ -3,8 +3,8 @@ import './Catalog.css'
 import CatalogBody from "../CatalogBody/CatalogBody";
 import CatalogFilter from "../CatalogFilter/CatalogFilter";
 
-const defaultCategory = "All"
 export const API_URL = 'https://raw.githubusercontent.com/SoraMaruyama/flowerAPI/master/flowers.json'
+export const defaultCategory = 'All'
 
 const Catalog = () => {
     const [products, setProducts] = useState([])

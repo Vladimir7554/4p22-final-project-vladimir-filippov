@@ -5,13 +5,11 @@ import HomePage from "./pages/HomePage";
 import BasketPage from "./pages/BasketPage";
 import ProductPage from "./pages/ProductPage";
 import FeedbackPage from "./pages/FeedbackPage";
-
-function FeedBackPage() {
-    return null;
-}
+import { AppContext, defaultContextValue } from "./context";
 
 const App = () => {
     return (
+        <AppContext.Provider value={defaultContextValue}>
         <BrowserRouter basename="/4p22-final-project-vladimir-filippov">
             <Routes>
                 <Route path="/" element={<Layout />} >
@@ -22,6 +20,7 @@ const App = () => {
                 </Route>
             </Routes>
         </BrowserRouter>
+        </AppContext.Provider>
     );
 };
 
