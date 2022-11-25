@@ -1,10 +1,5 @@
 import { createContext } from "react";
 
-export const defaultContextValue = {
+export const AppContext = createContext({});
 
-    basketTotalPrice: 0,
-    basketTotalAmount: 0,
-    basketItems: [],
-}
-
-export const AppContext = createContext(defaultContextValue);
+export default AppContext

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Product = (props) => {
     const {
-        id, title, imgSrc, category, description, price = '0 $',
+        id, title, imgSrc, category, description, price = 0,
     } = props
     return (
         <div className="product">
@@ -18,7 +18,7 @@ const Product = (props) => {
                 <h1 className="product__title">{title}</h1>
                 <div className="product__description">{description}</div>
                 <div className="product__info">
-                    <div className="product__price">{price}</div>
+                    <div className="product__price">{price} $</div>
                     <div className="product__actions">
                         <button className="product__buy-button" type="button">Add to cart</button>
                     </div>

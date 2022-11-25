@@ -41,7 +41,7 @@ const ProductPage = () => {
             imgSrc="https://placekitten.com/356/326"
             category={category}
             description={instructions}
-            price={`${price} $`}
+            price={price}
    />
     );
 };

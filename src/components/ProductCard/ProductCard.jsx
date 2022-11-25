@@ -1,12 +1,35 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import "./ProductCard.css"
 import {Link} from "react-router-dom"
 import svg from './basket.svg'
+import AppContext from "../../context";
 
 const ProductCard = (props) => {
-    const { id, title, imgSrc, category, description, price = '0 $', } = props
+    const { id, title, imgSrc, category, description, price = 0, } = props
+
+    const {
+        basketItems,
+        setBasketItems, } = useContext(AppContext)
 
     const href = `catalog/${id}`
+
+    const onBuyButtonClick = () => {
+        const existingBasketProductIndex = basketItems.findIndex((basketItem) => basketItem.id === id)
+        const isExistInBasket  = existingBasketProductIndex >= 0 && typeof existingBasketProductIndex === 'number'
+        let newBasketItems = [...basketItems]
+
+        if (isExistInBasket) {
+            newBasketItems[existingBasketProductIndex].amount++
+        } else {
+            newBasketItems = [...newBasketItems, {
+                id,
+                amount: 1,
+            }]
+        }
+
+        setBasketItems(newBasketItems)
+
+    }
 
     return (
         <article className="product-card">
@@ -28,10 +51,10 @@ const ProductCard = (props) => {
                     <div className="product-card__price">
                         {price}
                     </div>
-                    <div className="product-card_buy-button" type="button">
+                    <button className="product-card_buy-button" type="button" onClick={onBuyButtonClick}>
                         <img src={svg} width="22" height="22" />
-                      <span>Add to card</span>
-                    </div>
+                      <span>Add to cart</span>
+                    </button>
                 </div>
             </div>
         </article>

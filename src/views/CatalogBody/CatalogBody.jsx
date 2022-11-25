@@ -16,7 +16,7 @@ const CatalogBody = (props) => {
                      imgSrc="https://placekitten.com/250/230"
                      category={category}
                      description={instructions}
-                     price={`${price} $`}
+                     price={price}
         />
         </li>
     ))}
