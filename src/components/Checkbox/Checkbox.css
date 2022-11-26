@@ -1,0 +1,27 @@
+.checkbox {
+    display: flex;
+    column-gap: 0.35em;
+}
+
+.checkbox__emulator {
+    width: var(--size);
+    height: var(--size);
+    border: 2px solid var(--c-dark);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox__label {
+    line-height: 1;
+    margin-top: -0.15em;
+}
+
+.checkbox__control:checked ~ .checkbox__emulator::after {
+   opacity: 1;
+}
+
+.checkbox__emulator::after {
+    content: "✓";
+    opacity: 0;
+}
