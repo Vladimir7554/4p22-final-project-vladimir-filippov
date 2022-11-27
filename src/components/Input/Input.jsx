@@ -12,6 +12,7 @@ const Input = (props) => {
         label,
         isLabelHidden = true,
         type = 'text',
+        error = '',
     } = props
 
     const isTextArea = type === 'textarea'
@@ -20,6 +21,8 @@ const Input = (props) => {
     const onlyTextAreaProps = {}
     const extraProps = isTextArea ? onlyTextAreaProps : onlyInputProps
 
+    const hasError = Boolean(error)
+
     return (
         <>
             <label className={`${isLabelHidden ? 'visually-hidden' : ''}`} htmlFor={id}>
@@ -27,14 +30,16 @@ const Input = (props) => {
             </label>
 
         <Component
-            className={`${className} input`}
+            className={`${className} input ${hasError ? 'is-invalid' : ''}`}
             placeholder={placeholder}
             id={id}
             value={value}
+            error={error}
             onChange={onChange}
             name={name}
             {...extraProps}
         />
+            {hasError && <div className="error">{error}</div> }
         </>
     )
 }

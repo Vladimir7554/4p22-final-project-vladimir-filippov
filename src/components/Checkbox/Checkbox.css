@@ -1,6 +1,7 @@
 .checkbox {
     display: flex;
     column-gap: 0.35em;
+    flex-wrap: wrap;
 }
 
 .checkbox__emulator {
@@ -24,4 +25,9 @@
 .checkbox__emulator::after {
     content: "✓";
     opacity: 0;
+}
+
+.checkbox .error {
+    flex-basis: 100%;
+    line-height: 1;
 }

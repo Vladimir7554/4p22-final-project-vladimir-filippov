@@ -1,0 +1,7 @@
+.input {
+    border: 2px solid var(--c-dark)
+}
+
+.input.is-invalid {
+    border-color: red;
+}
