@@ -1,0 +1,276 @@
+{
+  "parts": [
+    {
+      "category": "Видеокарты",
+      "price": 4099,
+      "instructions": "[N210-1GD3/LP]",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/320/250/0408616abed24e2d09b0f8ffab59a84d/37a9ddc6abd9161645d3b8a24d249a29fd4dc72aa13e9cd14452f3fb69cfe2d8.jpg",
+      "name": "MSI GeForce 210",
+      "productId": 1
+    },
+    {
+      "category": "Видеокарты",
+      "price": 4099,
+      "instructions": "[AXR7 240 2GBD5-HLEV2]",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/320/250/9ec743a77c2b529e369c0426d1e425ec/b1a27e4c29c7c86a51b6f28685ee67913a27b6666af7b283c2bfb87bc30c6748.jpg",
+      "name": "Radeon R7 240",
+      "productId": 2
+    },
+    {
+      "category": "Видеокарты",
+      "price": 4599,
+      "instructions": "[71GGF4DC00WK]",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/320/250/e172b6cca6fcae46fa5871f9d75bad3e/18a288a875e979427409ff1ad3cf060db730078a1240c3dd568a8d7759e8c7e5.jpg",
+      "name": "GT 710 PASSIVE",
+      "productId": 3
+    },
+    {
+      "category": "Видеокарты",
+      "price": 4999,
+      "instructions": "[AXRX 550 2GBD5-HLE]",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/320/250/1a0757451eb4ba11f5437e17d7edee1a/598be3fe8e2fe1f3339de2526afd75b60f335d399da5593ebe98747ef875006b.jpg",
+      "name": "AMD Radeon 550 LP",
+      "productId": 4
+    },
+    {
+      "category": "Видеокарты",
+      "price": 5399,
+      "instructions": "[N730K-2GD3H/LP]",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/320/250/3027e3b0c04c1533b8d6e14456e78429/1c30f727804bd437cac0b7300a2c95e90a1ad3715b5097de7e33f30acb04e557.jpg",
+      "name": "MSI GeForce GT 730 SLP",
+      "productId": 5
+    },
+    {
+      "category": "Видеокарты",
+      "price": 5699,
+      "instructions": "[GV-N710D5SL-2GL]",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/de088c37ae16a4f789969bdaed528ee7/5d1bf83b258eb801c95ddee5e5654b8107e118e98b3e39a596262f789e8858fc.jpg.webp",
+      "name": "GeForce GT 710 SLP",
+      "productId": 6
+    },
+    {
+      "category": "Видеокарты",
+      "price": 5999,
+      "instructions": "[GV-N710D5-2GL]",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/320/250/9bf03dc2e465fc374663a4043d0e7952/600de4237bbfeb29860f7752d63013f61d7fdbb721bc5ae482c4fb7bc9599dce.jpg",
+      "name": "GeForce GT 710 LP",
+      "productId": 7
+    },
+    {
+      "category": "Видеокарты",
+      "price": 5899,
+      "instructions": "[AXRX 550 2GBD5-HLEV2]",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/500/500/ef05fe1e3f0dbca5332b7c1ad22bf479/08a87c5e8262bcbf034c3a7d6a3d61284a62f54422ef2219e33ea2be11ba7502.jpg.webp",
+      "name": "AMD Radeon 550 LP",
+      "productId": 8
+    },
+    {
+      "category": "Материнские платы",
+      "price": 4499,
+      "instructions": "AM4, AMD A320, 2xDDR4-2667 МГц, 1xPCI-Ex16, Micro-ATX",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/2a7125060c8898060d2a36c1ec6143bf/88e3d9aaa719af1a97937a0254761d5f2db0b1a39e562d204944115756568461.jpg.webp",
+      "name": "MSI A320M-A PRO",
+      "productId": 9
+    },
+    {
+      "category": "Материнские платы",
+      "price": 4799,
+      "instructions": "AM4, AMD A320, 2xDDR4-2667 МГц, 1xPCI-Ex16, 1xM.2, Micro-ATX",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/4d0bbda7fa9a46dd195bb5aa36f5c7d1/d61397122d5538ab214bbd003edc94b4e321f9525c9f5ce6fd78a8db652267d7.jpg.webp",
+      "name": "MSI A320M PRO-VH",
+      "productId": 10
+    },
+    {
+      "category": "Материнские платы",
+      "price": 4999,
+      "instructions": "AM4, AMD A320, 2xDDR4-2666 МГц, 1xPCI-Ex16, 1xM.2, Micro-ATX",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/3b73c499fcf6f6313a1be2a94e9cc46d/3c66a413f5b34475d121dc003410d206296732d01793c43818ecc0aa09eb5fd1.jpg.webp",
+      "name": "ASUS PRIME A320M-K",
+      "productId": 11
+    },
+    {
+      "category": "Материнские платы",
+      "price": 4999,
+      "instructions": "AM4, AMD A320, 2xDDR4-2667 МГц, 1xPCI-Ex16, 1xM.2, Micro-ATX",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/7ae8045ec09fb269001b5bf3cba6df49/3584f25f0dc78627fdca3c8fe9a557c5261fde6217e6b64fd05ad9558774b2b7.jpg.webp",
+      "name": "GIGABYTE GA-A320M-H",
+      "productId": 12
+    },
+    {
+      "category": "Материнские платы",
+      "price": 4999,
+      "instructions": "AM4, AMD A320, 2xDDR4-2667 МГц, 1xPCI-Ex16, 1xM.2, Micro-ATX",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/wm/0/0/db25f190a0ce443b348d851185fc0dd5/745e2113f3eeaa3051c043a5fee0b49ce820101bf5870cbc37c03325bc8808ba.jpg.webp",
+      "name": "GIGABYTE GA-A320M-S2H",
+      "productId": 13
+    },
+    {
+      "category": "Материнские платы",
+      "price": 5499,
+      "instructions": "AM4, AMD A520, 2xDDR4-3200 МГц, 1xPCI-Ex16, 1xM.2, Micro-ATX",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/43e469470ec6e4e17ad4b1c88e0dde06/b39a9eb74d117800292b2ac8dce34724c31683ea497e2afc3f9152d1f586651d.jpg.webp",
+      "name": "MSI A520M-A PRO",
+      "productId": 14
+    },
+    {
+      "category": "Материнские платы",
+      "price": 5799,
+      "instructions": "AM4, AMD A520, 2xDDR4-3200 МГц, 1xPCI-Ex16, 1xM.2, Micro-ATX",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/fe3085924e4a2a33a0aeaaa19c339981/1c92845aa9663cc4fd0212f5bae0f1e8ecd04ad1a4d66ea3540bd4aa19bc6482.jpg.webp",
+      "name": "GIGABYTE A520M H",
+      "productId": 15
+    },
+    {
+      "category": "Материнские платы",
+      "price": 5799,
+      "instructions": "AM4, AMD A520, 2xDDR4-3200 МГц, 1xPCI-Ex16, 1xM.2, Micro-ATX ",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/500/500/98485f8c4c58662294e926781fde8569/0ac1cc2b02eac5e84eebbd0ff93fe3a08834ce21e434f10016a7279f346180cf.jpg.webp",
+      "name": "MSI A520M PRO-VH",
+      "productId": 16
+    },
+    {
+      "category": "Процессоры",
+      "price": 10199,
+      "instructions": "LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2хDDR4-2666 МГц, TDP 65 Вт",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/500/500/329e175affa2c843ac979d80b29be10c/d00b73f72318adb378a14635f42e85818e819c928a7a75c1040497aaec1976a8.jpg.webp",
+      "name": "Intel Core i5-10400F OEM",
+      "productId": 17
+    },
+    {
+      "category": "Процессоры",
+      "price": 10199,
+      "instructions": "LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2хDDR4-2666 МГц, TDP 65 Вт",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/052d73944ab292aa839a7dd62f48d7ca/98bc683e3b25bfe064c5e4a03866dd5b914146452388985a19ce869fd95f845d.jpg.webp",
+      "name": "Intel Core i5-10400F OEM",
+      "productId": 18
+    },
+    {
+      "category": "Процессоры",
+      "price": 10199,
+      "instructions": "LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2хDDR4-2666 МГц, TDP 65 Вт",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/8713a261b5fec5b5e8c2f6dd7111d661/b82ca137e8126499dc0b73424825d642c120abced17a34c70f03894a213e0b47.jpg.webp",
+      "name": "Intel Core i5-10400F OEM",
+      "productId": 19
+    },
+    {
+      "category": "Процессоры",
+      "price": 10299,
+      "instructions": "LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2хDDR4-2666 МГц, TDP 65 Вт",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/8713a261b5fec5b5e8c2f6dd7111d661/b82ca137e8126499dc0b73424825d642c120abced17a34c70f03894a213e0b47.jpg.webp",
+      "name": "Intel Core i5-10400F OEM",
+      "productId": 20
+    },
+    {
+      "category": "Процессоры",
+      "price": 10399,
+      "instructions": "LGA 1200, 6 x 2.9 ГГц, L2 - 1.5 МБ, L3 - 12 МБ, 2хDDR4-2666 МГц, TDP 65 Вт, кулер",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/ac47ae84cd9180f1f903d6d31fd86e54/9b254d46665f18f6f337410d68b525191daf7918207369419a4e019c4becacd7.jpg.webp",
+      "name": "Intel Core i5-10400F BOX",
+      "productId": 21
+    },
+    {
+      "category": "Процессоры",
+      "price": 10699,
+      "instructions": "LGA 1200, 6 x 2.6 ГГц, L2 - 3 МБ, L3 - 12 МБ, 2хDDR4-3200 МГц, TDP 65 Вт, кулер",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/1099da028d041a368558c8d8e703af87/9e7d3ab9681f5d8cd72039c37c5ff8b672e88ae5d26c2c6f19a2cc4c4f41c915.jpg.webp",
+      "name": "Intel Core i5-11400F BOX",
+      "productId": 22
+    },
+    {
+      "category": "Процессоры",
+      "price": 11199,
+      "instructions": "LGA 1200, 6 x 2.6 ГГц, L2 - 3 МБ, L3 - 12 МБ, 2хDDR4-3200 МГц, TDP 65 Вт ",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/99a855e6a1f777f59d470eb010582b4b/73808fa64b5271bcfeabaf6efa81d861af3ddafaabbceb5c244b824588c01365.jpg.webp",
+      "name": "Intel Core i5-11400F",
+      "productId": 23
+    },
+    {
+      "category": "Процессоры",
+      "price": 11199,
+      "instructions": "LGA 1200, 6 x 2.6 ГГц, L2 - 3 МБ, L3 - 12 МБ, 2хDDR4-3200 МГц, TDP 65 Вт",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/3a47de6ca2b387c6ee0fbcf16ebf8013/ada8ee183c6e0aa841bfd877d0e04aac59793c60ce4b95ff78860a95d051eb0b.jpg.webp",
+      "name": "Intel Core i5-11400F OEM",
+      "productId": 24
+    },
+    {
+      "category": "Мониторы",
+      "price": 6499,
+      "instructions": "1366x768@60 Гц, TN, 5 мс, 700 : 1, 200 Кд/м², 90°/65°, VGA (D-Sub) ",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/a87844e2fcb598425f620db167781ec8/9aa41dd5ab8c3752c4b58a32589057028d6bf34c99c721fe1de4124628fc232b.jpg.webp",
+      "name": "AOC E970SWN черный",
+      "productId": 25
+    },
+    {
+      "category": "Мониторы",
+      "price": 6999,
+      "instructions": "1920x1080@75 Гц, VA, 5 мс, 3000 : 1, 250 Кд/м², 178°/178°, HDMI, VGA (D-Sub), AMD FreeSync",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/f704559cc19bfad78cc89237e3a96548/f7ef1b90ad85629304912ea0e89188bb581889bd659a3e34f2c21c2faf709e6c.jpg.webp",
+      "name": "Acer EK220QAbi черный",
+      "productId": 26
+    },
+    {
+      "category": "Мониторы",
+      "price": 7499,
+      "instructions": "1920x1080@60 Гц, TN, 5 мс, 200 Кд/м², 90°/65°, VGA (D-Sub), HDMI",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/7168957a67fe95ecff166347bf8ed2a7/60a186c508d58393327f0101a40fcb8b5879a73f3699a2ce1d17c05a1cd58026.jpg.webp",
+      "name": "Acer KA220HQbi черный",
+      "productId": 27
+    },
+    {
+      "category": "Мониторы",
+      "price": 7499,
+      "instructions": "1920x1080@60 Гц, TN, 5 мс, 200 Кд/м², 90°/65°, VGA (D-Sub), HDMI",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/7168957a67fe95ecff166347bf8ed2a7/60a186c508d58393327f0101a40fcb8b5879a73f3699a2ce1d17c05a1cd58026.jpg.webp",
+      "name": "Aloe Vera",
+      "productId": 28
+    },
+    {
+      "category": "Мониторы",
+      "price": 7999,
+      "instructions": "1600x900@60 Гц, TN, 5 мс, 600 : 1, 200 Кд/м², 90°/60°, VGA (D-Sub)",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/7cd681ff987ffdf5aacde3c7c96208f1/a2749d2446d3f661a96547d62c9dc3fe06b7876d34db206edfc70672fbd8d9b8.jpg.webp",
+      "name": "AOC E2070SWN черный",
+      "productId": 29
+    },
+    {
+      "category": "Мониторы",
+      "price": 7999,
+      "instructions": "1600x900@60 Гц, TN, 5 мс, 600 : 1, 200 Кд/м², 90°/50°, VGA (D-Sub)",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/7e7c14a5c00adda9a67032848c98dc64/6a538178eccc4223e36e34913b0c1fce195cb1dec119d13e511288cc668abdf3.jpg.webp",
+      "name": "Philips 203V5LSB26 черный",
+      "productId": 30
+    },
+    {
+      "category": "Мониторы",
+      "price": 8499,
+      "instructions": "1920x1080@60 Гц, VA, 5 мс, 3000 : 1, 250 Кд/м², 178°/178°, DVI-D, VGA (D-Sub)",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/0709533b62d30c14a6903c1504291da3/b68b04710d97d3ec6474cfc84475c5c561f97a27aff3449bc1c92182d22a8963.jpg.webp",
+      "name": "AOC M2470SWD23(00/01) черный",
+      "productId": 31
+    },
+    {
+      "category": "Мониторы",
+      "price": 8499,
+      "instructions": "1920x1080@75 Гц, VA, 4 мс, 3000 : 1, 250 Кд/м², 178°/178°, HDMI, VGA (D-Sub), AMD FreeSync",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/500/500/6d701043e6233fcfd8ee0ad259a53552/202fbe144bcc0e9302daed82608a8d3c62d0184b025d481a5843980c61cced77.jpg.webp",
+      "name": "Philips 221V8 черный",
+      "productId": 32
+    },
+    {
+      "category": "Периферия",
+      "price": 585,
+      "instructions": "Комплект клавиатура и мышь. Кнопок мыши - 3 шт, оптическая светодиодная, USB",
+      "photo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/fbfd06caaae99db97632d4970991052f/f96e5d50809202e37cd2d6136db0d66836451f1e9d31b2da3aca94beb0ced3ee.jpg.webp",
+      "name": "Ritmix RKC-010 черный",
+      "productId": 33
+    },
+    {
+      "category": "Периферия",
+      "price": 599,
+      "instructions": "Комплект клавиатура и мышь. Кнопок мыши - 3 шт, оптическая светодиодная, USB",
+      "photo": "https://c.dns-shop.ru/thumb/st1/fit/500/500/1a052a87a90f2a96ca2b9d2c4dc25c7c/261ac5ee2444d107bce94a302998cb8d59c7c145565e244a6aa7de55dd988848.jpg.webp",
+      "name": "Ritmix RKC-055 черный",
+      "productId": 34
+    }
+  ]
+}

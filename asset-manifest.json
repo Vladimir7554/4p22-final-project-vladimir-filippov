@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-vladimir-filippov/static/css/main.073c9b0a.css",
-    "main.js": "/4p22-final-project-vladimir-filippov/static/js/main.f5ee0e7a.js",
-    "static/js/787.0d91a58b.chunk.js": "/4p22-final-project-vladimir-filippov/static/js/787.0d91a58b.chunk.js",
-    "static/media/logo.svg": "/4p22-final-project-vladimir-filippov/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/4p22-final-project-vladimir-filippov/index.html",
-    "main.073c9b0a.css.map": "/4p22-final-project-vladimir-filippov/static/css/main.073c9b0a.css.map",
-    "main.f5ee0e7a.js.map": "/4p22-final-project-vladimir-filippov/static/js/main.f5ee0e7a.js.map",
-    "787.0d91a58b.chunk.js.map": "/4p22-final-project-vladimir-filippov/static/js/787.0d91a58b.chunk.js.map"
+    "main.css": "/Vladimir7554/4p22-final-project-vladimir-filippov/static/css/main.8ecc55d4.css",
+    "main.js": "/Vladimir7554/4p22-final-project-vladimir-filippov/static/js/main.be44ff8c.js",
+    "static/media/dns.png": "/Vladimir7554/4p22-final-project-vladimir-filippov/static/media/dns.3e3209115abceb399edc.png",
+    "static/media/basket.svg": "/Vladimir7554/4p22-final-project-vladimir-filippov/static/media/basket.743e2017be8d0a79649a02d69b47b550.svg",
+    "index.html": "/Vladimir7554/4p22-final-project-vladimir-filippov/index.html",
+    "static/media/console.svg": "/Vladimir7554/4p22-final-project-vladimir-filippov/static/media/console.2fa153dfd4634a30b424e8b761e4d6f3.svg",
+    "main.8ecc55d4.css.map": "/Vladimir7554/4p22-final-project-vladimir-filippov/static/css/main.8ecc55d4.css.map",
+    "main.be44ff8c.js.map": "/Vladimir7554/4p22-final-project-vladimir-filippov/static/js/main.be44ff8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f5ee0e7a.js"
+    "static/css/main.8ecc55d4.css",
+    "static/js/main.be44ff8c.js"
   ]
 }
