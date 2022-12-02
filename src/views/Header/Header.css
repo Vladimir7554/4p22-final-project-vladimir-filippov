@@ -1,17 +1,31 @@
 .header {
-    background-color: var(--c-light);
+    background-color: var(--c-accent);
 }
 
 .header__menu-list {
     display: flex;
     list-style: none;
-    column-gap: 24px;
+    column-gap: 4vw;
+    flex-direction: row;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__menu-link {
     color: var(--c-darkgrey);
+    text-decoration: none;
 }
 
 .header__menu-link.is-active {
-    color: var(--c-accent);
+    background-color: var(--c-accent);
+    color: var(--c-light);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .header__menu-list {
+        column-gap: 50px;
+        font-size: 15px;
+    }
 }

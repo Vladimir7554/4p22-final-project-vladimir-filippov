@@ -12,7 +12,6 @@ const Select = (props) => {
     return (
         <div className="{`${className` select}">
             <select
-                // className="visually-hidden"
                 name={name}
                 onChange={onChange}
                 value={value}

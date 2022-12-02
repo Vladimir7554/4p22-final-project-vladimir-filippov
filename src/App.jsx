@@ -7,14 +7,31 @@ import ProductPage from "./pages/ProductPage";
 import FeedbackPage from "./pages/FeedbackPage";
 import AppContext from "./context";
 
+
 const App = () => {
 
     const [basketItems, setBasketItems] = useState([])
+
+    const addToBasket = (id) => {
+        const existingBasketProductIndex = basketItems.findIndex((basketItem) => basketItem.id === id)
+        const isExistInBasket = existingBasketProductIndex >= 0
+        let newBasketItems = [...basketItems]
+        if (isExistInBasket) {
+            newBasketItems[existingBasketProductIndex].amount++
+        } else {
+            newBasketItems = [...newBasketItems, {
+                id,
+                amount: 1,
+            }]
+        }
+        setBasketItems(newBasketItems)
+    }
 
     return (
         <AppContext.Provider value={{
             basketItems,
             setBasketItems,
+            addToBasket,
         }}
         >
 

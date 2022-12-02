@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import {useParams} from "react-router";
 import {API_URL} from "../views/Catalog/Catalog";
 import Product from "../views/Product/Product";
+import AppContext from "../context";
+
 
 const ProductPage = () => {
-    const { id } = useParams()
 
-    const [productInfo, setProductInfo] = useState({})
+    const { id } = useParams()
+    const [product, setProduct] = useState({})
     const [isLoading, setIsLoading] = useState(true)
 
     const {
@@ -15,15 +17,16 @@ const ProductPage = () => {
         name,
         instructions,
         productId,
-    } = productInfo
+        photo,
+    } = product
 
     const fetchProductInfo = () => {
       fetch(API_URL)
           .then((response ) => response.json())
           .then((responseData) => {
-              const product = responseData.flowerlist.find(({ productId }) => String(productId) === id)
+              const product = responseData.parts.find(({ productId }) => productId.toString() === id)
 
-              setProductInfo(product)
+              setProduct(product)
               setIsLoading(false)
           })
     }
@@ -38,7 +41,7 @@ const ProductPage = () => {
     return (
    <Product id={productId}
             title={name}
-            imgSrc="https://placekitten.com/356/326"
+            imgSrc={photo}
             category={category}
             description={instructions}
             price={price}

@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import Input from "../../components/Input/Input";
 import Checkbox from "../../components/Checkbox/Checkbox";
+import "./reset.css"
 import "./FeedbackForm.css"
 import Radios from "../../components/Radios/Radios";
 import Select from "../../components/Select/Select";
+import FileAttach from "../../components/FileAttach/FileAttach";
 
 const FeedbackForm = () => {
 
@@ -23,8 +25,8 @@ const FeedbackForm = () => {
 
     const [sexVariants, setSexVariants] = useState([
 
-            { id: 'male', label: 'Male', isChecked: true, },
-            { id: 'female', label: 'Female', },
+            { id: 'male', label: 'Муж', isChecked: true, },
+            { id: 'female', label: 'Жен', },
     ])
 
     const onSexVariantsChange = (id) => {
@@ -43,7 +45,7 @@ const FeedbackForm = () => {
             message,
             agreement,
             sex: sexVariants.find(({ isChecked }) => isChecked).id,
-            country
+            country,
         })
     }
 
@@ -60,27 +62,27 @@ const FeedbackForm = () => {
             if (isEmailValid(email)) {
                 setEmailError('')
         } else {
-            setEmailError('Incorrect email')
+            setEmailError('Некорректный email')
                 hasError = true
         }
 
             if (name.length > 0) {
                 setNameError('')
         } else {
-                setNameError('Required field')
+                setNameError('Поле обязательно к заполнению')
         }
 
         if (message.length > 0) {
             setMessageError('')
         } else {
-            setMessageError('Required field')
+            setMessageError('Поле обязательно к заполнению')
             hasError = true
         }
 
         if (agreement) {
             setAgreementError('')
         } else {
-            setAgreementError('Required field')
+            setAgreementError('Поле обязательно к заполнению')
             hasError = true
         }
         return !hasError
@@ -103,6 +105,7 @@ const FeedbackForm = () => {
         <form className="feedback-form" onSubmit={onSubmit}>
             <div className="feedback-form__item">
                 <Input
+                    className="feedback-form__item-input"
                     label="Email"
                     isLabelHidden={true}
                     name="email"
@@ -116,9 +119,10 @@ const FeedbackForm = () => {
 
             <div className="feedback-form__item">
                 <Input
+                    className="feedback-form__item-input"
                     label="Name"
                     name="name"
-                    placeholder="Vladimir Filippov"
+                    placeholder="Владимир Филиппов"
                     value={name}
                     error={nameError}
                     onChange={({ target }) => setName(target.value)}
@@ -128,10 +132,11 @@ const FeedbackForm = () => {
 
             <div className="feedback-form__item">
                 <Input
+                    className="feedback-form__item-textarea"
                     label="Message"
                     type="textarea"
                     name="message"
-                    placeholder="Your message"
+                    placeholder="Текст вашего сообщения"
                     value={message}
                     error={messageError}
                     onChange={({ target }) => setMessage(target.value)}
@@ -141,7 +146,7 @@ const FeedbackForm = () => {
 
             <div className="feedback-form__item">
                 <Checkbox
-                    label="I agree with terms"
+                    label="Я согласен с правилами"
                     name="agreement"
                     error={agreementError}
                     isChecked={agreement}
@@ -149,32 +154,33 @@ const FeedbackForm = () => {
                 />
             </div>
 
-            <div className="feedback-form__item">
+            <div className="feedback-form__item-radio">
                 <Radios
                 name="sex"
-                label="Choose your sex:"
+                label="Выберите свой пол:"
                 items={sexVariants}
                 onChange={onSexVariantsChange}
                 />
             </div>
 
             <div className="feedback-form__item">
+                <span>Выберите страну проживания:</span>
                 <Select
                     name="Country"
                     value={country}
                     options={[
                 {
                     value: 'russia',
-                    label: 'Russia',
+                    label: 'Россия',
                     isSelected: true,
                 },
                 {
-                    value: 'poland',
-                    label: 'Poland',
+                    value: 'usa',
+                    label: 'США',
                 },
                 {
-                    value: 'china',
-                    label: 'China',
+                    value: 'vietnam',
+                    label: 'Вьетнам',
                 },
             ]}
                     onChange={onCountrySelectedChange}
@@ -182,10 +188,16 @@ const FeedbackForm = () => {
             </div>
 
             <div className="feedback-form__item">
+               <FileAttach
+               onChange={(event) => console.log(event)}
+               />
+            </div>
+
+            <div className="feedback-form__item">
               <button
                   className="feedback-form__item-button"
                   type="submit">
-                  Send data
+                  Отправить
               </button>
             </div>
         </form>

@@ -1,35 +1,20 @@
-import React, {useContext} from 'react'
+import React, {useEffect, useState, useContext} from 'react';
 import "./ProductCard.css"
 import {Link} from "react-router-dom"
 import svg from './basket.svg'
 import AppContext from "../../context";
 
 const ProductCard = (props) => {
-    const { id, title, imgSrc, category, description, price = 0, } = props
+    const { basketItems, addToBasket } = useContext(AppContext)
 
-    const {
-        basketItems,
-        setBasketItems, } = useContext(AppContext)
-
-    const href = `catalog/${id}`
 
     const onBuyButtonClick = () => {
-        const existingBasketProductIndex = basketItems.findIndex((basketItem) => basketItem.id === id)
-        const isExistInBasket  = existingBasketProductIndex >= 0 && typeof existingBasketProductIndex === 'number'
-        let newBasketItems = [...basketItems]
-
-        if (isExistInBasket) {
-            newBasketItems[existingBasketProductIndex].amount++
-        } else {
-            newBasketItems = [...newBasketItems, {
-                id,
-                amount: 1,
-            }]
-        }
-
-        setBasketItems(newBasketItems)
-
+        addToBasket(id)
     }
+
+    const { id, title, imgSrc, category, description, price = 0, } = props
+
+    const href = `catalog/${id}`
 
     return (
         <article className="product-card">
@@ -49,11 +34,11 @@ const ProductCard = (props) => {
             <div className="product-card__description" title={description}>{description}</div>
                 <div className="product-card__info">
                     <div className="product-card__price">
-                        {price}
+                        {price} руб
                     </div>
-                    <button className="product-card_buy-button" type="button" onClick={onBuyButtonClick}>
+                    <button className="product-card__buy-button" type="button" onClick={onBuyButtonClick}>
                         <img src={svg} width="22" height="22" />
-                      <span>Add to cart</span>
+                      <span>В корзину</span>
                     </button>
                 </div>
             </div>

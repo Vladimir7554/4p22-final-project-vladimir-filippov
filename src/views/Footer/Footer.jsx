@@ -8,9 +8,10 @@ const Footer = (props) => {
 
   return (
 
-    <header className={`${className} footer`}>
-      FOOTER
-    </header>
+    <footer className={`${className} footer`}>
+      Оставайтесь на связи
+      8-800-77-07-999 (c 03:00 до 22:00)
+    </footer>
 
   )
   }

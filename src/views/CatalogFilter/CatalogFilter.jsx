@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Input from "../../components/Input/Input";
 import './CatalogFilter.css'
-import svg from './filter.svg'
+// import svg from './filter.svg'
 import {defaultCategory} from "../Catalog/Catalog";
 
 const CatalogFilter = (props) => {
@@ -43,18 +43,14 @@ const CatalogFilter = (props) => {
 
     return (
         <div className="catalog-filter">
-<div className="catalog-filter__title">
-    <img src={svg} width="22" height="22" />
-    <span>
-        Filtering
-    </span>
-</div>
-            <Input
-                className="catalog-filter__input"
-                placeholder="Search...."
-                value={searchQuery}
-                onChange={onInputChange}
-            />
+
+{/*<div className="catalog-filter__title">*/}
+{/*    <img src={svg} width="22" height="22" />*/}
+{/*    <span>*/}
+{/*        Фильтрация*/}
+{/*    </span>*/}
+{/*</div>*/}
+
 
             <div className="catalog-filter__categories">
                 {categories.map((categoryName) => {
@@ -76,6 +72,13 @@ const CatalogFilter = (props) => {
                     )
                 })}
             </div>
+
+            <Input
+                className="catalog-filter__input"
+                placeholder="Введите в поле слова для быстрого поиска по названиям моделей"
+                value={searchQuery}
+                onChange={onInputChange}
+            />
         </div>
     );
 };

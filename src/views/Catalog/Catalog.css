@@ -1,7 +1,11 @@
 .catalog-body__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(30vmin, 1fr));
     gap: 38px 17px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 li {

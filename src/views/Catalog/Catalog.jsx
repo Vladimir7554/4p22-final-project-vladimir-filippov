@@ -3,8 +3,8 @@ import './Catalog.css'
 import CatalogBody from "../CatalogBody/CatalogBody";
 import CatalogFilter from "../CatalogFilter/CatalogFilter";
 
-export const API_URL = 'https://raw.githubusercontent.com/SoraMaruyama/flowerAPI/master/flowers.json'
-export const defaultCategory = 'All'
+export const API_URL = '/4p22-final-project-vladimir-filippov/public/db.json'
+export const defaultCategory = 'Все'
 
 const Catalog = () => {
     const [products, setProducts] = useState([])
@@ -22,9 +22,9 @@ const Catalog = () => {
         fetch(API_URL)
             .then((response) => response.json())
             .then((response) => {
-                const newProducts = response.flowerlist.map((product) => ({
+                const newProducts = response.parts.map((product) => ({
                     ...product,
-                    imgSrc: 'https://placekitten.com/250/230'
+                    imgSrc: "photo"
                 }))
                 const newCategories = getCategoriesFromProducts(newProducts)
 

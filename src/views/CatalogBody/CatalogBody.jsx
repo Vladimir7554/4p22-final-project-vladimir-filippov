@@ -9,11 +9,11 @@ const CatalogBody = (props) => {
     return (
         <div className="catalog-body">
 <ul className="catalog-body__list">
-    {products.map(({productId, name, thumbnailUrl, category, instructions, price,}) => (
+    {products.map(({productId, name, category, instructions, price, photo}) => (
     <li className="catalog-body__item" key={productId}>
         <ProductCard id={productId}
                      title={name}
-                     imgSrc="https://placekitten.com/250/230"
+                     imgSrc={photo}
                      category={category}
                      description={instructions}
                      price={price}

@@ -1,5 +1,7 @@
 import React from 'react';
 import FeedbackForm from "../views/FeedbackForm/FeedbackForm";
+import "./FeedbackPage.css"
+
 
 const FeedbackPage = () => {
     return (

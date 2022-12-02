@@ -1,6 +1,42 @@
 .catalog-filter__category-button.is-active {
 
 background-color: var(--c-accent);
-color: var(--c-gray-3);
+color: var(--c-light);
 
+}
+
+.catalog-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 11.1vw;
+}
+
+.catalog-filter__input {
+    font-size: 1vw;
+    width: 66.5vw;
+}
+
+.catalog-filter__categories {
+    font-size: 1.1vw;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+.catalog-filter__input {
+     font-size: 2vw;
+     width: 90vw;
+}
+
+button {
+      width: 15vw;
+      font-size: 1.8vw;
+}
+
+.catalog-filter__categories {
+       font-size: 1.5vw;
+    }
 }
