@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-vladimir-filippov/static/css/main.8ecc55d4.css",
-    "main.js": "/4p22-final-project-vladimir-filippov/static/js/main.ae3fbb77.js",
+    "main.css": "/4p22-final-project-vladimir-filippov/static/css/main.a343d63b.css",
+    "main.js": "/4p22-final-project-vladimir-filippov/static/js/main.156d4f21.js",
     "static/media/dns.png": "/4p22-final-project-vladimir-filippov/static/media/dns.3e3209115abceb399edc.png",
     "static/media/basket.svg": "/4p22-final-project-vladimir-filippov/static/media/basket.743e2017be8d0a79649a02d69b47b550.svg",
     "index.html": "/4p22-final-project-vladimir-filippov/index.html",
     "static/media/console.svg": "/4p22-final-project-vladimir-filippov/static/media/console.2fa153dfd4634a30b424e8b761e4d6f3.svg",
-    "main.8ecc55d4.css.map": "/4p22-final-project-vladimir-filippov/static/css/main.8ecc55d4.css.map",
-    "main.ae3fbb77.js.map": "/4p22-final-project-vladimir-filippov/static/js/main.ae3fbb77.js.map"
+    "main.a343d63b.css.map": "/4p22-final-project-vladimir-filippov/static/css/main.a343d63b.css.map",
+    "main.156d4f21.js.map": "/4p22-final-project-vladimir-filippov/static/js/main.156d4f21.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ecc55d4.css",
-    "static/js/main.ae3fbb77.js"
+    "static/css/main.a343d63b.css",
+    "static/js/main.156d4f21.js"
   ]
 }
